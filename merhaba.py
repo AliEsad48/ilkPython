@@ -15,7 +15,8 @@ def krediCekmek():
     print("Başarıyla kredi çektiniz")
 
 while (islem!="Q"):
-    islem = str(input("Lütfen yapmak istediğiniz işlemi seçiniz \n1-Para Yatırmak\n2-Para Çekmek\n3-Kredi Çekmek\n"))
+    islem = str(input("Lütfen yapmak istediğiniz işlemi seçiniz \n1-Para Yatırmak\n2-Para Çekmek\n3-Kredi Çekmek\nÇıkmak için büyük Q yazınız\n"))
+    islem.upper()
     if islem == "1":
         paraYatirmak(bakiye)
     elif islem == "2":
